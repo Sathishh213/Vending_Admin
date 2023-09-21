@@ -39,7 +39,7 @@
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="Password"  Width="150" />
-                                <PasswordBox Name="txtPassword" Width="350" PasswordChar="*" MaxLength="8" BorderBrush="White" />
+                                <PasswordBox Name="txtPassword" Width="350" PasswordChar="*" MaxLength="15" BorderBrush="White" />
                             </StackPanel>
                         </StackPanel>
                         <StackPanel>

@@ -43,11 +43,11 @@
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="Password"  Width="250" />
-                                <PasswordBox Name="txtPassword" Width="350" MaxLength="8" PasswordChar="*" BorderBrush="White" />
+                                <PasswordBox Name="txtPassword" Width="350" MaxLength="15" PasswordChar="*" BorderBrush="White" />
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="Confirm Password"  Width="250" />
-                                <PasswordBox Name="txtConfirmPassword" Width="350" MaxLength="8" PasswordChar="*" BorderBrush="White" />
+                                <PasswordBox Name="txtConfirmPassword" Width="350" MaxLength="15" PasswordChar="*" BorderBrush="White" />
                             </StackPanel>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal">
