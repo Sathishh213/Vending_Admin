@@ -53,12 +53,12 @@ namespace Vending_Admin
                 string email = txtEmail.Text;
                 string password = txtPassword.Password;
                 string confirmpassword = txtPassword.Password;
-                cmd = @"select * from User_Details where User_Name='" + userName + "'";
+                cmd = @"select * from User_Details where User_Name='" + userName + "' OR Email_Address='" + email +"'";
                 dt = acc.GetTable(cmd);
 
                 if (dt.Rows.Count > 0)
                 {
-                    DisplayMsg("Username Already Exists!!");
+                    DisplayMsg("Username or Email Already Exists!!");
                 }
                 else if (!IsvalidEmailFormat(email))
                 {
@@ -108,6 +108,13 @@ namespace Vending_Admin
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
             ClearFields();
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            frmLogin frmLogin = new frmLogin();
+            this.Hide();
+            frmLogin.Show();
         }
 
         private void ClearFields()

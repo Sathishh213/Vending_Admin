@@ -80,5 +80,12 @@ namespace Vending_Admin
             txtUserName.Text = string.Empty;
             txtPassword.Password = string.Empty;
         }
+
+        private void btnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            frmRegister frmRegister = new frmRegister();
+            this.Hide();
+            frmRegister.Show();
+        }
     }
 }

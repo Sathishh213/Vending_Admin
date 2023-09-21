@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vending_Admin"
         mc:Ignorable="d"
-        Height="350" Width="525"  WindowState="Minimized" 
+        Height="1080" Width="1920" WindowState="Maximized" ResizeMode="NoResize" WindowStyle="None"
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes" 
         FontSize="25" Foreground="White" 
         Topmost="True" Loaded="Window_Loaded">
@@ -42,9 +42,13 @@
                                 <PasswordBox Name="txtPassword" Width="350" PasswordChar="*" MaxLength="8" BorderBrush="White" />
                             </StackPanel>
                         </StackPanel>
+                        <StackPanel>
+                            
+                        </StackPanel>
                         <StackPanel Orientation="Horizontal">
                             <Button  Name="btnLogin" Content="Login" Margin="10,10,0,10" Click="btnLogin_Click" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  Width="150" Height="50" Style="{StaticResource MaterialDesignRaisedButton}" />
                             <Button  Name="btnClear" Content="Clear" Margin="10,10,0,10" Click="btnClear_Click" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  Width="150" Height="50" Style="{StaticResource MaterialDesignRaisedButton}" />
+                            <Button  Name="btnRegister" Content="Register New User" Margin="10,10,0,10" Click="btnRegister_Click" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  Width="250" Height="50" Style="{StaticResource MaterialDesignRaisedButton}" />
                         </StackPanel>
                     </StackPanel>
                 </WrapPanel>
