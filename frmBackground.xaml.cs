@@ -126,7 +126,8 @@ namespace Vending_Admin
                     bw.RunWorkerAsync();
                 }
 
-                frmReport frm = new frmReport();
+                //frmReport frm = new frmReport();
+                frmLogin frm = new frmLogin();
                 frm.Show();
                 // tmr_focus.Start();
             }
