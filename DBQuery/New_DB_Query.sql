@@ -93,11 +93,13 @@ use database Product_Store;
 --    PRIMARY KEY (order_id)
 --);
 
+DROP TABLE User_Details;
+
 CREATE TABLE User_Details(
     User_id bigint NOT NULL AUTO_INCREMENT,
     Email_Address varchar(100) NOT NULL,
     User_Name varchar(15)  NOT NULL,
-    Password varchar(8)  NOT NULL,
+    Password varchar(15)  NOT NULL,
     PRIMARY KEY (User_id)
 );
 
